@@ -1,0 +1,41 @@
+//import { Guild } from 'discord.js';
+
+const Discord = require('discord.js');
+
+var bot = new Discord.Client();
+
+//var prefix = ("!");
+var angryLevel = -1;
+var Copy = 10;
+var condition1 = false;
+
+bot.on('ready', ()=> {
+	console.log("FORLAN is ready");
+});
+
+bot.login('NDQwNDUwMjcyMzc2OTEzOTIw.Dg6Cvw.8w45Bw8Qxf6Tgof9ajiQWRdNTfU');
+
+	bot.on('message', message => {
+
+	if(message.content === "une video stp")
+	{
+		condition1 = true;
+			 message.channel.send("salut a tous c forlan :wink: :heart_eyes::heart_eyes_cat: 3 cartes goole play sont a ");
+	
+	}
+	if(message.content === "C quoi le titre?" && condition1 == true)
+	{
+			 message.channel.send("OMG IL QUITTE KIM KARDHACHIANT PARCE QU'IL NA PAS FAIT DE TOP 1 :joy: :scream: :rolling_eyes: ");
+	
+	}
+	else if (message.content === "C quoi le titre?" && condition1 == false)
+	{message.channel.send("quelle titre de quoi :confused: ");}
+
+	if(message.content === "C quoi la miniature?" && condition1 == true)
+	{
+			 message.channel.send("un mec qui touche des seins avec une scar légendaire et des fucking emoji en gros se sera ca :forlan: ");
+	         
+	}
+	else if (message.content === "C quoi la miniature?" && condition1 == false)
+	{message.channel.send("quelle minia?");}
+});
